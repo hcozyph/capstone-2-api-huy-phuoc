@@ -1,0 +1,50 @@
+// default
+@import "./themes/default";
+// compunents
+@import "./themes/proone";
+// index
+@import "./themes/index";
+// detail
+@import "./themes/detail";
+// 
+@import "./themes/login";
+
+@import "./themes/register";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Poppins";
+    background: black;
+    border-bottom: 0.1px solid rgba(230, 207, 89, 0.43);
+    animation: color-change 8s linear infinite;
+    @keyframes color-change {
+      0%,100%{
+        border-color:#F6F1E9;
+      }
+      25%{
+        border-color:#efe778;
+      }
+      50%{
+        border-color:#c98e2f;
+      }
+      75%{
+        border-color:#4F200D;
+      }
+    }
+  }
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+    @extend .test-h1;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
